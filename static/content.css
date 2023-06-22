@@ -1,0 +1,49 @@
+head{
+    background-color: #80348c;
+}
+
+.liveChartPrediction{
+    background-color: #80348c;
+}
+
+h2{
+
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 20px;
+    font-family: 'impact', sans-serif;
+    font-weight: 250;
+    margin-bottom: 35px;
+
+}
+
+.liveChart{
+
+    position: fixed;
+    margin-top: 180px;
+    left: 120px;
+    right: 120px;
+    padding: 25px;
+
+}
+
+.companyProfile{
+
+    position: fixed;
+    margin-top: 180px;
+    left: 120px;
+    right: 120px;
+    padding: 25px;
+
+}
+
+.stockSummary{
+
+    position: fixed;
+    margin-top: 180px;
+    left: 120px;
+    right: 120px;
+    padding: 25px;
+    
+}
