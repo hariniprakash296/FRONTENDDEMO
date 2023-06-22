@@ -10,20 +10,24 @@
         <section id="overlay">
             <div class="topnav">
             <nav>
-                <ul class="menuItems">
-                  <li><a href='#' data-item='Home'>Home</a></li>
-                  <li><a href="{{ url_for('liveChartPrediction') }}">Live Prediction</a></li>
-                  <li><a href='#' data-item='Projects'>Projects</a></li>
-                  <li><a href='#' data-item='Blog'>Blog</a></li>
-                  <li><a href='#' data-item='Contact'>Contact</a></li>
-                </ul>
+              <ul class="menuItems">
+                <li>STOCKTIME<li>
+                <li>
+                    <li><a href="{{ url_for('StockSummary') }}">Stock Summary</a></li>
+                    <li><a href="{{ url_for('liveChartPrediction') }}">Live Prediction</a></li>
+                    <li><a href="{{ url_for('Statistics') }}">Statistics</a></li>
+                    <li><a href="{{ url_for('CompanyProfile') }}">Company Profile</a><li>
+                    <li><a href="{{ url_for('Analysis') }}">Analysis</a></li>
+                    <li><a href="{{ url_for('OtherExpPred') }}">Other Expert's Prediction</a>/li>
+                </li>
+              </ul>
             </nav>
             </div>
     <hr>
     <form>
         <h1>Prediction Demo</h1>
         <section id="boxoverlay">
-            
+          <img src="{{ url_for('static', filename='graph.png') }}" alt="CSV Data Graph">
         </section>
           </form>
         </section>
