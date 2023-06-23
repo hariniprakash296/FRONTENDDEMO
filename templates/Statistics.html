@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Home</title>
+    <link rel="content" type="text/css"
+    href="{{ url_for('static', filename='content.css') }}"/>
+</head>
+<body>
+    <section id="overlay">
+        <div class="topnav">
+        <nav>
+          <ul class="menuItems">
+            <li style="color: #FF6E74; font-size: 30px; font-border: white; text-align: center;"><p><b>STOCKTIME</b></P><li>
+            <li>
+                <li><a href="{{ url_for('StockSummary') }}">Stock Summary</a></li>
+                <li><a href="{{ url_for('liveChartPrediction') }}">Live Prediction</a></li>
+                <li><a href="{{ url_for('Statistics') }}">Statistics</a></li>
+                <li><a href="{{ url_for('CompanyProfile') }}">Company Profile</a><li>
+                <li><a href="{{ url_for('Analysis') }}">Analysis</a></li>
+                <li><a href="{{ url_for('OtherExpPred') }}">Other Expert's Prediction</a></li>
+            </li>
+          </ul>
+        </nav>
+        </div>
+<hr>
+<form>
+    <h1>Statistics</h1>
+    <section id="boxoverlay">
+        
+    </section>
+      </form>
+    </section>
+  </body>
+</html>
+
+<style>
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #642C74;
+    overflow: hidden;
+}
+        /*Making navigation bar horizontal*/
+        li {
+            display: inline;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: center;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: #642C74;
+        }
+        
+        /* Add a color to the active/current link */
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+body {
+    background-color: #E7D2FE;
+    font-family: Rubik, Arial;
+    text: white;
+  }
+  
+  form {
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    height: 80%;
+    overflow: auto;
+  }
+  
+  form hr {
+    width: 15%;
+  }
+  
+  h1 {
+    text-align: center;
+
+  }
+  
+  #overlay {
+    width: 90%;
+    margin: 1% auto;
+    height: 100vh;
+    background-color: #642C74;
+    border-radius: 20px;
+  }
+
+  #boxoverlay {
+    width: 90%;
+    margin: 3% auto;
+    height: 70vh;
+    background-color: #618ABB;
+    border-radius: 20px;
+  }
+  
+  #logo {
+    height: 100px;
+    display: block;
+    margin: auto;
+  }
+  
+  
+  .toppings label, .cheesy label {
+    margin-right: 25px;
+  }
+  
+  
+</style>
